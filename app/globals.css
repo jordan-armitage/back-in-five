@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  @apply text-slate-900;
+  background-color: #f7f1e8;
+  background-image: radial-gradient(circle at top, #fff7ea 0%, #f7f1e8 45%, #efe4d2 100%);
+  background-attachment: fixed;
+  font-family: "Avenir Next", "Avenir", "Futura", "Gill Sans", "Trebuchet MS", sans-serif;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee {
+    animation: none !important;
+    transform: translateX(0) !important;
+  }
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  #print-sign,
+  #print-sign * {
+    visibility: visible;
+  }
+
+  #print-sign {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    box-shadow: none !important;
+  }
+}
