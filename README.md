@@ -32,7 +32,7 @@ This project is configured for GitHub Pages at:
 `https://jordan-armitage.github.io/back-in-five/`
 
 ### Option A: Publish with GitHub Actions (recommended)
-This repo includes `.github/workflows/deploy.yml`.
+This repo includes `.github/workflows/nextjs.yml`.
 
 1. Upload the full repo to GitHub.
 2. Go to **Settings > Pages**.
